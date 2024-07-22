@@ -1,11 +1,7 @@
 package com.voice.config;
 
-import com.voice.recording.SoundDataCenter;
-import com.voice.ui.Hud;
-
 import java.io.*;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.Map;
 
 public class Config implements Serializable {
@@ -55,25 +51,10 @@ public class Config implements Serializable {
             if (!dic.exists()) {
                 dic.mkdir();
                 configFile.createNewFile();
-                Map<String, Object> serializableMap = new HashMap<>();
-                serializableMap.put("device", SoundDataCenter.DEVICE);
-                serializableMap.put("packetLength", SoundDataCenter.DEFAULT_PACKET_LENGTH);
-                serializableMap.put("volume", SoundDataCenter.DEFAULT_AUDIO_VOLUME);
-                serializableMap.put("volumeLimit", SoundDataCenter.DEFAULT_AUDIO_VOLUME_LIMIT);
-                serializableMap.put("posx", Hud.xRate);
-                serializableMap.put("posy", Hud.yRate);
-                saveVoiceSettings(serializableMap);
-                return serializableMap;
+                return null;
             } else if (!configFile.exists()) {
                 configFile.createNewFile();
-                Map<String, Object> serializableMap = new HashMap<>();
-                serializableMap.put("device", SoundDataCenter.DEVICE);
-                serializableMap.put("packetLength", SoundDataCenter.DEFAULT_PACKET_LENGTH);
-                serializableMap.put("volume", SoundDataCenter.DEFAULT_AUDIO_VOLUME);
-                serializableMap.put("volumeLimit", SoundDataCenter.DEFAULT_AUDIO_VOLUME_LIMIT);
-                serializableMap.put("posx", Hud.xRate);
-                serializableMap.put("posy", Hud.yRate);
-                saveVoiceSettings(serializableMap);
+                return null;
             }
             FileInputStream inputStream = new FileInputStream(configFile);
             ObjectInputStream obin = new ObjectInputStream(inputStream);

@@ -1,7 +1,6 @@
 package com.voice;
 
-import com.voice.network.NetworkSender;
-import net.minecraftforge.client.event.sound.SoundEvent;
+import com.voice.client.network.NetworkSender;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;

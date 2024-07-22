@@ -1,10 +1,10 @@
 package com.voice.config;
 
-import com.voice.group.Group;
-import com.voice.group.GroupChat;
+import com.voice.server.group.Group;
+import com.voice.server.group.GroupChat;
 import com.voice.log.VoiceLogger;
-import com.voice.network.GroupPacketHandler;
-import com.voice.network.NetworkSender;
+import com.voice.client.network.GroupPacketHandler;
+import com.voice.client.network.NetworkSender;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 

@@ -8,7 +8,7 @@
 6. Voice software development based on the BASS library. All recording data collection and pcm data playback are implemented by the BASS library. The mixing of C++ and JAVA greatly improves program performance and handles various memory garbage in a timely manner.
 7. No configuration required, just install and use!
 
-### Important： The application logs and prompt messages are all written in Chinese. It would be greatly appreciated if you could help translate them into English. Alternatively, you can try to use the more popular and easy-to-use SimpleVoiceChat module.
+### Important： The application logs and prompt messages are all written in Chinese. It would be greatly appreciated if you could help translate them into English. Alternatively, you can try to use the more popular and easy-to-use SimpleVoiceChat mod.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Voicechat 是一款用于在Minecraft游戏内语音聊天的Minecraft Forge Mod，它适用于1.20.x版本，运用一些简单的指令，就能够完成语音聊天的一系列设置，这款聊天软件可以：
 
